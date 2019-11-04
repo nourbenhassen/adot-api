@@ -3,6 +3,7 @@ const fs = require("fs");
 
 //function calculates distance between two points given latitudes and longitudes
 //https://www.geodatasource.com/developers/javascript
+
 function distanceFunc(lat1, lon1, lat2, lon2) {
   if (lat1 === lat2 && lon1 === lon2) {
     return 0;
@@ -72,7 +73,7 @@ const dataFunc = data =>
             ...ele,
           };
         });
-        return resolve(parsedData);
+        resolve(parsedData);
       });
   });
 
